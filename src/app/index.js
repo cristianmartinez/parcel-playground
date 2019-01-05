@@ -1,5 +1,7 @@
-import module1 from './module1';
-import {componentName} from '../main.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import HelloWorld from './components/HelloWorld/HelloWorld';
+import '../main.css';
 
-const component = `<div class="${componentName}">${module1()}</div>`;
-document.getElementById('root').innerHTML = component;
+var rootNode = document.getElementById('root');
+ReactDOM.render(<HelloWorld/>, rootNode);
